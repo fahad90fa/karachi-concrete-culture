@@ -47,6 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        concrete: {
+          DEFAULT: "hsl(var(--concrete))",
+          dark: "hsl(var(--concrete-dark))",
+        },
+        rust: "hsl(var(--rust))",
+        ochre: "hsl(var(--ochre))",
+        paper: "hsl(var(--paper))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
