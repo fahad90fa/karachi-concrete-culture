@@ -135,9 +135,14 @@ const Index = () => {
             </div>
           </div>
           <div className="md:col-span-5 reveal">
-            <div className="relative border-2 border-foreground shadow-brutal-lg bg-paper">
-              <img src={cover} alt="Cover — The Concrete Vernacular" className="w-full block" />
-            </div>
+            <button
+              type="button"
+              onClick={() => setLightbox({ src: cover, alt: "Cover — The Concrete Vernacular", caption: "Cover / The Concrete Vernacular" })}
+              className="group block w-full border-2 border-foreground shadow-brutal-lg bg-paper overflow-hidden cursor-zoom-in focus:outline-none focus:ring-4 focus:ring-accent"
+              aria-label="Open cover preview"
+            >
+              <img src={cover} alt="Cover — The Concrete Vernacular" className="w-full block transition-transform duration-700 group-hover:scale-[1.03]" />
+            </button>
           </div>
         </div>
       </section>
