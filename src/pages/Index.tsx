@@ -318,7 +318,146 @@ const Index = () => {
         </div>
       </section>
 
-      {/* COLOPHON */}
+      {/* HABIB BANK PLAZA — CASE STUDY */}
+      <section id="habib" className="container py-20 md:py-28 scroll-mt-20">
+        <SectionLabel n="08" label="Case Study" />
+        <h2 className="font-display text-5xl md:text-7xl uppercase reveal leading-none">
+          Habib Bank<br />Plaza · 1963
+        </h2>
+        <p className="mt-4 text-sm uppercase tracking-[0.3em] text-muted-foreground reveal">
+          Architect — Leo A. Daly · I.I. Chundrigar Road, Karachi
+        </p>
+
+        <div className="mt-12 grid md:grid-cols-12 gap-12 items-start">
+          <div className="md:col-span-6 reveal">
+            <Figure src={habibBank} alt="Habib Bank Plaza, Karachi" caption="Habib Bank Plaza · Karachi · Leo A. Daly" />
+          </div>
+          <div className="md:col-span-6 space-y-6 text-base md:text-lg leading-relaxed reveal">
+            <div>
+              <p className="font-display uppercase text-xs tracking-widest text-accent mb-2">Overview</p>
+              <p>
+                Completed in 1968 and officially inaugurated in 1971, the Habib Bank Plaza was a groundbreaking feat of engineering for South Asia. Standing at <strong>101 metres (331 ft)</strong> with 22 stories, it held the title of the tallest building in Asia until 1970 and remained the tallest in Pakistan for nearly four decades.
+              </p>
+            </div>
+            <div>
+              <p className="font-display uppercase text-xs tracking-widest text-accent mb-2">Architectural Style — South Asian Brutalism</p>
+              <p>
+                The building is a premier example of the <em>"International Style"</em> adapted into a Brutalist framework. It rejects the ornate, decorative styles of the past in favour of <strong>structural honesty</strong> — its form clearly expresses its function and internal skeletal structure — and <strong>monumentalism</strong>, its massive blocky presence on Karachi's "Wall Street" symbolising the city's financial strength and the "Machine Age" of the 1960s.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Key Features */}
+        <div className="mt-16 reveal">
+          <h3 className="font-display text-2xl md:text-3xl uppercase mb-8">Key Features</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              { t: "Exposed Concrete & Local Aggregates", b: "The facade is defined by its raw, unpainted concrete finish (béton brut). By using local sand and stone in the concrete mix, the building subtly reflects the earthy tones of the Sindh region while maintaining an industrial edge." },
+              { t: "Geometric Facade — The 'Coin Stack'", b: "The building is often described as resembling a stack of coins, created by its rhythmic, repetitive horizontal and vertical concrete grids — a high-contrast play of light and shadow characteristic of Brutalist photography." },
+              { t: "Climatic Response — Deep-set Windows", b: "Unlike Western glass towers, the architect designed deep concrete recesses for the windows. These act as natural sun-breakers (brise-soleil), shielding the interior from Karachi's intense heat and reducing the solar load on the building." },
+              { t: "Cultural Symbolism", b: "Beyond architecture, the plaza is a symbol of Post-Colonial Identity — Pakistan's transition from a colonial economy to a modern, independent financial power. It has even integrated into local culture as a traditional site for the Ruet-e-Hilal Committee to gather for moon-sighting." },
+            ].map((f, i) => (
+              <div key={i} className="border-2 border-foreground bg-card p-6 shadow-brutal hover:-translate-x-1 hover:-translate-y-1 hover:shadow-brutal-lg transition-transform">
+                <p className="font-display text-accent text-sm tracking-widest">0{i + 1}</p>
+                <h4 className="font-display text-xl uppercase mt-2">{f.t}</h4>
+                <p className="mt-3 text-foreground/80">{f.b}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Critical Summary */}
+        <div className="mt-12 border-l-4 border-accent pl-6 max-w-3xl reveal">
+          <p className="font-display uppercase text-xs tracking-widest text-accent mb-2">Critical Summary</p>
+          <p className="text-base md:text-lg leading-relaxed italic text-foreground/90">
+            The Habib Bank Plaza is more than just an office — it is a monument to progress. It successfully blends the harsh, uncompromising lines of Brutalism with functional adaptations for a tropical climate, making it an essential case study for understanding the intersection of modern architecture and South Asian urban identity.
+          </p>
+        </div>
+
+        <div className="mt-16 reveal">
+          <Figure src={habibBankStructure} alt="Structure of Habib Bank Plaza Karachi" caption="Fig. 7 / Structure of Habib Bank Plaza · Karachi" />
+        </div>
+      </section>
+
+      {/* CONCLUSION */}
+      <section id="conclusion" className="bg-foreground text-background py-20 md:py-28 scroll-mt-20">
+        <div className="container">
+          <SectionLabel n="09" label="Conclusion" />
+          <div className="grid md:grid-cols-12 gap-10">
+            <h2 className="md:col-span-4 font-display text-4xl md:text-5xl uppercase reveal">
+              The vernacular of concrete.
+            </h2>
+            <p className="md:col-span-8 text-lg md:text-xl leading-relaxed reveal">
+              Karachi's Brutalism is not a borrowed dialect but a translation — a global language poured into local moulds. From the Habib Bank Plaza's coin-stack facade to the brise-soleil shielding its interiors from the Sindh sun, the city demonstrates that design is never neutral: it negotiates climate, faith, and post-colonial identity in every cubic metre of concrete it casts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* BIBLIOGRAPHY */}
+      <section id="bibliography" className="container py-20 md:py-28 scroll-mt-20">
+        <SectionLabel n="10" label="References" />
+        <h2 className="font-display text-4xl md:text-6xl uppercase mb-12 reveal">Bibliography</h2>
+        <p className="text-xs uppercase tracking-[0.3em] text-accent mb-6">Books & Scholarly Works</p>
+        <ol className="space-y-5 max-w-4xl reveal">
+          {[
+            'Banham, Reyner. "The New Brutalism." In A History of Architecture, edited by Dan Cruickshank. London: Architectural Press, 1996.',
+            'Burckhardt, Titus. Art of Islam: Language and Meaning. London: World of Islam Festival Publishing, 1976.',
+            'Fazio, Michael, Marian Moffett, and Lawrence Wodehouse. Buildings across Time: An Introduction to World Architecture. 4th ed. Boston: McGraw-Hill, 2013.',
+            'Jarzombek, Mark. Architecture of First Societies: A Global Perspective. Hoboken, NJ: Wiley, 2013.',
+            'Julier, Guy. The Culture of Design. 3rd ed. London: SAGE Publications, 2014.',
+            'Kostof, Spiro. A History of Architecture: Settings and Rituals. 2nd ed. New York: Oxford University Press, 1995.',
+            'Lasdun, Denys. "Architecture as Urban Landscape." RIBA Journal 84, no. 3 (1977): 95–102.',
+            'Nasr, Seyyed Hossein. Knowledge and the Sacred. Albany: State University of New York Press, 1989.',
+          ].map((c, i) => (
+            <li key={i} className="flex gap-5 border-b border-foreground/20 pb-5">
+              <span className="font-display text-accent text-sm tracking-widest pt-1">{String(i + 1).padStart(2, "0")}</span>
+              <p className="text-base md:text-lg leading-relaxed text-foreground/90">{c}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      {/* FIGURE CITATIONS */}
+      <section id="figures" className="bg-paper py-20 md:py-28 scroll-mt-20">
+        <div className="container">
+          <SectionLabel n="11" label="Image Credits" />
+          <h2 className="font-display text-4xl md:text-6xl uppercase mb-12 reveal">Figure Citations</h2>
+          <div className="overflow-x-auto reveal">
+            <table className="w-full border-2 border-foreground bg-card shadow-brutal">
+              <thead className="bg-foreground text-background font-display uppercase text-sm tracking-widest">
+                <tr>
+                  <th className="text-left p-4 border-r border-background/30">Fig.</th>
+                  <th className="text-left p-4 border-r border-background/30">Subject</th>
+                  <th className="text-left p-4 border-r border-background/30">Reference</th>
+                  <th className="text-left p-4">Source</th>
+                </tr>
+              </thead>
+              <tbody className="text-sm md:text-base">
+                {[
+                  ["1", "Timeline of Modernist Design Movements", "Compiled from Cruickshank; Jarzombek; Fazio et al.", "Author's diagram"],
+                  ["2", "Unité d'Habitation, Marseille (Le Corbusier, 1952)", "Fazio, Moffett & Wodehouse; Jarzombek et al.; Cruickshank", "Fondation Le Corbusier"],
+                  ["3", "Trellick Tower, London (Ernő Goldfinger, 1972)", "Cruickshank and Jarzombek", "ArcEyes"],
+                  ["4", "Royal National Theatre, London (Denys Lasdun, 1976)", "Ingersoll & Kostof, World Architecture; Jarzombek's global histories", "Architecture Lab"],
+                  ["5", "Burmah Shell Oil Office, Karachi (1978)", "Photograph courtesy of Karachi architectural archives", "—"],
+                  ["6", "Taj Mahal Hotel, Karachi (1982)", "Photograph courtesy of Karachi architectural archives", "—"],
+                  ["7", "Structure of Habib Bank Plaza, Karachi", "Compiled drawings & photographs of Habib Bank Plaza", "Karachi architectural archives"],
+                ].map((row, i) => (
+                  <tr key={i} className="border-t border-foreground/30 align-top">
+                    <td className="p-4 border-r border-foreground/30 font-display text-accent">{row[0]}</td>
+                    <td className="p-4 border-r border-foreground/30">{row[1]}</td>
+                    <td className="p-4 border-r border-foreground/30 text-foreground/80">{row[2]}</td>
+                    <td className="p-4 text-foreground/80 italic">{row[3]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+
       <footer className="bg-foreground text-background py-16">
         <div className="container grid md:grid-cols-3 gap-10 text-sm">
           <div>
