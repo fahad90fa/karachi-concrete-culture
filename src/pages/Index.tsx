@@ -88,6 +88,7 @@ const Lightbox = ({ item, onClose }: { item: LightboxItem | null; onClose: () =>
 const Index = () => {
   useReveal();
   const [scroll, setScroll] = useState(0);
+  const [lightbox, setLightbox] = useState<LightboxItem | null>(null);
 
   useEffect(() => {
     const onScroll = () => {
@@ -99,7 +100,9 @@ const Index = () => {
   }, []);
 
   return (
+    <LightboxCtx.Provider value={setLightbox}>
     <main className="bg-background text-foreground concrete-texture min-h-screen">
+      <Lightbox item={lightbox} onClose={() => setLightbox(null)} />
       {/* Scroll progress */}
       <div className="fixed top-0 left-0 right-0 h-1 bg-foreground/10 z-50">
         <div className="h-full bg-accent transition-[width] duration-150" style={{ width: `${scroll}%` }} />
