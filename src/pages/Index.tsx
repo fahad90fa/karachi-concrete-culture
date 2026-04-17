@@ -547,6 +547,7 @@ const Index = () => {
         </div>
       </footer>
     </main>
+    </LightboxCtx.Provider>
   );
 };
 
