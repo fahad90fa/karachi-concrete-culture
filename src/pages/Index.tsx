@@ -8,6 +8,8 @@ import nationalTheatre from "@/assets/national-theatre.png";
 import karachi from "@/assets/karachi.png";
 import burmahShell from "@/assets/burmah-shell.png";
 import tajMahal from "@/assets/taj-mahal.png";
+import habibBank from "@/assets/habib-bank.png";
+import habibBankStructure from "@/assets/habib-bank-structure.png";
 
 const SectionLabel = ({ n, label }: { n: string; label: string }) => (
   <div className="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-muted-foreground mb-6">
@@ -79,6 +81,35 @@ const Index = () => {
               <img src={cover} alt="Cover — The Concrete Vernacular" className="w-full block" />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* TABLE OF CONTENTS */}
+      <section className="container pb-16 md:pb-20">
+        <div className="border-2 border-foreground bg-card shadow-brutal-lg p-8 md:p-12 reveal">
+          <SectionLabel n="—" label="Table of Contents" />
+          <h2 className="font-display text-3xl md:text-5xl uppercase mb-8">Contents</h2>
+          <ol className="grid md:grid-cols-2 gap-x-12 gap-y-4 text-base md:text-lg">
+            {[
+              { id: "introduction", t: "Introduction" },
+              { id: "modernism", t: "An Overview of Modernism" },
+              { id: "timeline", t: "Timeline of Modernist Design Movements" },
+              { id: "tradition", t: "The Influence of Tradition on Brutalism" },
+              { id: "culture", t: "Brutalism's Influence on Culture" },
+              { id: "habib", t: "Case Study — Habib Bank Plaza, Karachi" },
+              { id: "conclusion", t: "Conclusion" },
+              { id: "bibliography", t: "Bibliography" },
+              { id: "figures", t: "Figure Citations" },
+            ].map((it, i) => (
+              <li key={it.id}>
+                <a href={`#${it.id}`} className="group flex items-baseline gap-4 border-b border-foreground/30 pb-2 hover:text-accent transition-colors">
+                  <span className="font-display text-accent text-sm tracking-widest">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="flex-1">{it.t}</span>
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                </a>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
