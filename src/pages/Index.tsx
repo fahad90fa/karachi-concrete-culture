@@ -127,7 +127,7 @@ const Index = () => {
       </div>
 
       {/* ABSTRACT */}
-      <section className="container py-20 md:py-28">
+      <section id="introduction" className="container py-20 md:py-28 scroll-mt-20">
         <SectionLabel n="00" label="Abstract" />
         <div className="grid md:grid-cols-12 gap-10">
           <h2 className="md:col-span-4 font-display text-4xl md:text-5xl uppercase leading-tight reveal">
@@ -140,7 +140,7 @@ const Index = () => {
       </section>
 
       {/* MODERNISM */}
-      <section className="bg-foreground text-background py-20 md:py-28 relative overflow-hidden">
+      <section id="modernism" className="bg-foreground text-background py-20 md:py-28 relative overflow-hidden scroll-mt-20">
         <div className="container">
           <SectionLabel n="01" label="Foundations" />
           <h2 className="font-display text-6xl md:text-8xl uppercase reveal">Modernism</h2>
@@ -167,7 +167,7 @@ const Index = () => {
       </section>
 
       {/* TIMELINE */}
-      <section className="container py-20 md:py-28">
+      <section id="timeline" className="container py-20 md:py-28 scroll-mt-20">
         <SectionLabel n="02" label="Lineage" />
         <h2 className="font-display text-4xl md:text-6xl uppercase mb-4 reveal">
           Timeline of Modernist<br />Design Movements
@@ -179,7 +179,7 @@ const Index = () => {
       </section>
 
       {/* BRUTALISM */}
-      <section className="bg-paper py-20 md:py-28 relative">
+      <section id="tradition" className="bg-paper py-20 md:py-28 relative scroll-mt-20">
         <div className="container">
           <SectionLabel n="03" label="The Rupture" />
           <h2 className="font-display text-6xl md:text-8xl uppercase reveal">Brutalism</h2>
@@ -240,7 +240,7 @@ const Index = () => {
       </section>
 
       {/* NATIONAL THEATRE */}
-      <section className="bg-foreground text-background py-20 md:py-28">
+      <section id="culture" className="bg-foreground text-background py-20 md:py-28 scroll-mt-20">
         <div className="container">
           <SectionLabel n="05" label="Civic Monumentality" />
           <div className="grid md:grid-cols-12 gap-12 items-center">
