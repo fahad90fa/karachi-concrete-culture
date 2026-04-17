@@ -385,7 +385,7 @@ const Index = () => {
         <div className="container">
           <SectionLabel n="09" label="Final Section" />
 
-          {/* Massive standalone title */}
+          {/* Standalone title */}
           <div className="mb-16 md:mb-20 reveal">
             <h2 className="font-display text-6xl md:text-8xl lg:text-9xl uppercase leading-[0.9] tracking-tight">
               Conclusion
@@ -393,38 +393,17 @@ const Index = () => {
             <div className="mt-6 h-1 w-32 bg-accent" />
           </div>
 
-          {/* Lead statement */}
-          <div className="grid md:grid-cols-12 gap-10 mb-20">
-            <div className="md:col-span-4 reveal">
-              <p className="font-display uppercase text-xs tracking-[0.3em] text-accent mb-3">Thesis Restated</p>
-              <p className="font-display text-2xl md:text-3xl uppercase leading-tight">
-                The vernacular of concrete.
-              </p>
-            </div>
-            <p className="md:col-span-8 text-lg md:text-xl leading-relaxed reveal">
-              Karachi's Brutalism is not a borrowed dialect but a translation — a global language poured into local moulds. From the Habib Bank Plaza's coin-stack facade to the brise-soleil shielding its interiors from the Sindh sun, the city demonstrates that design is never neutral: it negotiates climate, faith, and post-colonial identity in every cubic metre of concrete it casts.
+          {/* Body */}
+          <div className="max-w-4xl space-y-6 text-lg md:text-xl leading-relaxed text-background/90 reveal">
+            <p>
+              This essay has examined how Brutalism, far from being a neutral architectural import, became a site of cultural negotiation in post-colonial Karachi. While modernist architecture arrived as an instrument of state power — embodying what Seyyed Hossein Nasr terms the <em>"desacralization of knowledge"</em> — Karachi's local culture persistently reinscribed these concrete forms with new meaning.
             </p>
-          </div>
-
-          {/* Closing argument */}
-          <div className="grid md:grid-cols-12 gap-10 pt-12 border-t border-background/20">
-            <div className="md:col-span-4 reveal">
-              <p className="font-display uppercase text-xs tracking-[0.3em] text-accent mb-3">Closing Argument</p>
-              <p className="font-display text-2xl md:text-3xl uppercase leading-tight">
-                Architecture is never simply imposed or received — it is actively reinterpreted.
-              </p>
-            </div>
-            <div className="md:col-span-8 space-y-6 text-base md:text-lg leading-relaxed text-background/90 reveal">
-              <p>
-                This essay has examined how Brutalism, far from being a neutral architectural import, became a site of cultural negotiation in post-colonial Karachi. While modernist architecture arrived as an instrument of state power — embodying what Seyyed Hossein Nasr terms the <em>"desacralization of knowledge"</em> — Karachi's local culture persistently reinscribed these concrete forms with new meaning.
-              </p>
-              <p>
-                Through hybrid practices that merged modernist monumentality with Sufi pilgrimage traditions, and rational planning with organic settlement patterns, the city transformed Brutalism's "brutally honest" materialism into a distinctive post-colonial vernacular.
-              </p>
-              <p>
-                Ultimately, Karachi's Brutalist landscape reveals that architecture is never simply imposed or received, but actively reinterpreted. The city's concrete buildings stand not as monuments to universal modernism, but as emergent expressions of local identity — demonstrating how culture mediates between global forms and particular places, creating architectures that are neither purely modern nor traditionally authentic, but something dynamically new.
-              </p>
-            </div>
+            <p>
+              Through hybrid practices that merged modernist monumentality with Sufi pilgrimage traditions, and rational planning with organic settlement patterns, the city transformed Brutalism's "brutally honest" materialism into a distinctive post-colonial vernacular.
+            </p>
+            <p>
+              Ultimately, Karachi's Brutalist landscape reveals that architecture is never simply imposed or received, but actively reinterpreted. The city's concrete buildings stand not as monuments to universal modernism, but as emergent expressions of local identity — demonstrating how culture mediates between global forms and particular places, creating architectures that are neither purely modern nor traditionally authentic, but something dynamically new.
+            </p>
           </div>
         </div>
       </section>
