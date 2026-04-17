@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, createContext, useContext } from "react";
 import { useReveal } from "@/hooks/useReveal";
+import { X, ZoomIn } from "lucide-react";
 import cover from "@/assets/cover.png";
 import timeline from "@/assets/timeline.png";
 import unite from "@/assets/unite.png";
@@ -11,6 +12,9 @@ import tajMahal from "@/assets/taj-mahal.png";
 import habibBank from "@/assets/habib-bank.png";
 import habibBankStructure from "@/assets/habib-bank-structure.png";
 
+type LightboxItem = { src: string; alt: string; caption: string };
+const LightboxCtx = createContext<(item: LightboxItem) => void>(() => {});
+
 const SectionLabel = ({ n, label }: { n: string; label: string }) => (
   <div className="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-muted-foreground mb-6">
     <span className="font-display text-accent">{n}</span>
@@ -19,16 +23,67 @@ const SectionLabel = ({ n, label }: { n: string; label: string }) => (
   </div>
 );
 
-const Figure = ({ src, alt, caption }: { src: string; alt: string; caption: string }) => (
-  <figure className="reveal relative">
-    <div className="relative border-2 border-foreground shadow-brutal bg-card overflow-hidden">
-      <img src={src} alt={alt} className="w-full h-auto block transition-transform duration-700 hover:scale-[1.02]" loading="lazy" />
+const Figure = ({ src, alt, caption }: { src: string; alt: string; caption: string }) => {
+  const open = useContext(LightboxCtx);
+  return (
+    <figure className="reveal relative">
+      <button
+        type="button"
+        onClick={() => open({ src, alt, caption })}
+        className="group relative block w-full border-2 border-foreground shadow-brutal bg-card overflow-hidden cursor-zoom-in focus:outline-none focus:ring-4 focus:ring-accent"
+        aria-label={`Open preview: ${caption}`}
+      >
+        <img src={src} alt={alt} className="w-full h-auto block transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+        <span className="absolute top-3 right-3 flex items-center gap-1.5 bg-foreground text-background text-[10px] uppercase tracking-widest px-2.5 py-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
+          <ZoomIn className="w-3 h-3" /> View
+        </span>
+      </button>
+      <figcaption className="mt-3 text-xs uppercase tracking-widest text-muted-foreground border-l-2 border-accent pl-3">
+        {caption}
+      </figcaption>
+    </figure>
+  );
+};
+
+const Lightbox = ({ item, onClose }: { item: LightboxItem | null; onClose: () => void }) => {
+  useEffect(() => {
+    if (!item) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [item, onClose]);
+
+  if (!item) return null;
+  return (
+    <div
+      className="fixed inset-0 z-[100] bg-foreground/95 backdrop-blur-sm flex items-center justify-center p-4 md:p-10"
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+    >
+      <button
+        type="button"
+        onClick={onClose}
+        className="absolute top-4 right-4 md:top-6 md:right-6 bg-background text-foreground hover:bg-accent hover:text-background transition-colors p-3 border-2 border-background"
+        aria-label="Close preview"
+      >
+        <X className="w-5 h-5" />
+      </button>
+      <figure className="max-w-6xl w-full max-h-full flex flex-col items-center gap-4" onClick={(e) => e.stopPropagation()}>
+        <div className="border-2 border-background shadow-brutal-lg bg-background overflow-auto max-h-[80vh] w-full">
+          <img src={item.src} alt={item.alt} className="block w-full h-auto" />
+        </div>
+        <figcaption className="text-xs md:text-sm uppercase tracking-widest text-background/80 border-l-2 border-accent pl-3 self-start">
+          {item.caption}
+        </figcaption>
+      </figure>
     </div>
-    <figcaption className="mt-3 text-xs uppercase tracking-widest text-muted-foreground border-l-2 border-accent pl-3">
-      {caption}
-    </figcaption>
-  </figure>
-);
+  );
+};
 
 const Index = () => {
   useReveal();
