@@ -381,18 +381,32 @@ const Index = () => {
       </section>
 
       {/* CONCLUSION */}
-      <section id="conclusion" className="bg-foreground text-background py-20 md:py-28 scroll-mt-20">
+      <section id="conclusion" className="bg-foreground text-background py-24 md:py-32 scroll-mt-20 border-t-8 border-accent">
         <div className="container">
-          <SectionLabel n="09" label="Conclusion" />
-          <div className="grid md:grid-cols-12 gap-10 mb-16">
-            <h2 className="md:col-span-4 font-display text-4xl md:text-5xl uppercase reveal">
-              The vernacular of concrete.
+          <SectionLabel n="09" label="Final Section" />
+
+          {/* Massive standalone title */}
+          <div className="mb-16 md:mb-20 reveal">
+            <h2 className="font-display text-6xl md:text-8xl lg:text-9xl uppercase leading-[0.9] tracking-tight">
+              Conclusion
             </h2>
+            <div className="mt-6 h-1 w-32 bg-accent" />
+          </div>
+
+          {/* Lead statement */}
+          <div className="grid md:grid-cols-12 gap-10 mb-20">
+            <div className="md:col-span-4 reveal">
+              <p className="font-display uppercase text-xs tracking-[0.3em] text-accent mb-3">Thesis Restated</p>
+              <p className="font-display text-2xl md:text-3xl uppercase leading-tight">
+                The vernacular of concrete.
+              </p>
+            </div>
             <p className="md:col-span-8 text-lg md:text-xl leading-relaxed reveal">
               Karachi's Brutalism is not a borrowed dialect but a translation — a global language poured into local moulds. From the Habib Bank Plaza's coin-stack facade to the brise-soleil shielding its interiors from the Sindh sun, the city demonstrates that design is never neutral: it negotiates climate, faith, and post-colonial identity in every cubic metre of concrete it casts.
             </p>
           </div>
 
+          {/* Closing argument */}
           <div className="grid md:grid-cols-12 gap-10 pt-12 border-t border-background/20">
             <div className="md:col-span-4 reveal">
               <p className="font-display uppercase text-xs tracking-[0.3em] text-accent mb-3">Closing Argument</p>
