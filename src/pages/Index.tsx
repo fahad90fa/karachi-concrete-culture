@@ -196,9 +196,14 @@ const Index = () => {
           <h2 className="md:col-span-4 font-display text-4xl md:text-5xl uppercase leading-tight reveal">
             Design is never neutral.
           </h2>
-          <p className="md:col-span-8 text-lg md:text-xl leading-relaxed reveal">
-            This essay examines the intersection of <em>Brutalism</em> and the local culture of Karachi, arguing that design is never neutral but is a reflection of the socio-political and environmental landscape it inhabits. Drawing on Guy Julier's concept of <strong>"Design Culture,"</strong> the paper explores how the global Modernist movement specifically the raw, honest materiality of Brutalism was adapted to suit the post-colonial aspirations of a growing Pakistani megacity.
-          </p>
+          <div className="md:col-span-8 space-y-6">
+            <p className="text-lg md:text-xl leading-relaxed reveal">
+              This essay examines the intersection of <em>Brutalism</em> and the local culture of Karachi, arguing that design is never neutral but is a reflection of the socio-political and environmental landscape it inhabits. Drawing on Guy Julier's concept of <strong>"Design Culture,"</strong> the paper explores how the global Modernist movement specifically the raw, honest materiality of Brutalism was adapted to suit the post-colonial aspirations of a growing Pakistani megacity.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed reveal">
+              Yet this narrative of adaptation must contend with the specter of Louis Kahn, whose National Assembly Building in Dhaka (1962–1983) stands as perhaps the only modernist concrete structure in South Asia to successfully resist Nasr's critique of <em>"desacralization."</em> Kahn's geometric purity and monumental scale parallel the aspirations of Karachi's Brutalist architects, but his masterful orchestration of light, shadow, and sacred geometry suggested that modernism could accommodate spiritual resonance rather than merely replacing it. If Kahn asked brick what it wanted to be, Karachi's Brutalists often seemed to tell concrete what the state needed it to represent. This essay examines what happens when Brutalism's <em>"honest materiality"</em> arrives not as Kahn's poetic dialogue with place, but as an instrument of post-colonial state power and how Karachi's culture persistently reinscribed these concrete forms with meaning the architects never intended.
+            </p>
+          </div>
         </div>
       </section>
 
