@@ -111,7 +111,7 @@ const Index = () => {
       {/* Top bar */}
       <header className="sticky top-1 z-40 bg-background/80 backdrop-blur border-b border-foreground/20">
         <div className="container flex items-center justify-between py-3 text-xs uppercase tracking-[0.25em]">
-          <span className="font-display">F.K — 2025</span>
+          <span className="font-display">F.K 2025</span>
           <span className="hidden md:block">The Concrete Vernacular</span>
           <span className="text-accent">Essay / 01</span>
         </div>
@@ -137,11 +137,11 @@ const Index = () => {
           <div className="md:col-span-5 reveal">
             <button
               type="button"
-              onClick={() => setLightbox({ src: cover, alt: "Cover — The Concrete Vernacular", caption: "Cover / The Concrete Vernacular" })}
+              onClick={() => setLightbox({ src: cover, alt: "Cover The Concrete Vernacular", caption: "Cover / The Concrete Vernacular" })}
               className="group block w-full border-2 border-foreground shadow-brutal-lg bg-paper overflow-hidden cursor-zoom-in focus:outline-none focus:ring-4 focus:ring-accent"
               aria-label="Open cover preview"
             >
-              <img src={cover} alt="Cover — The Concrete Vernacular" className="w-full block transition-transform duration-700 group-hover:scale-[1.03]" />
+              <img src={cover} alt="Cover The Concrete Vernacular" className="w-full block transition-transform duration-700 group-hover:scale-[1.03]" />
             </button>
           </div>
         </div>
@@ -159,7 +159,7 @@ const Index = () => {
               { id: "timeline", t: "Timeline of Modernist Design Movements" },
               { id: "tradition", t: "The Influence of Tradition on Brutalism" },
               { id: "culture", t: "Brutalism's Influence on Culture" },
-              { id: "habib", t: "Case Study — Habib Bank Plaza, Karachi" },
+              { id: "habib", t: "Case Study Habib Bank Plaza, Karachi" },
               { id: "conclusion", t: "Conclusion" },
               { id: "bibliography", t: "Bibliography" },
               { id: "figures", t: "Figure Citations" },
@@ -197,7 +197,7 @@ const Index = () => {
             Design is never neutral.
           </h2>
           <p className="md:col-span-8 text-lg md:text-xl leading-relaxed reveal">
-            This essay examines the intersection of <em>Brutalism</em> and the local culture of Karachi, arguing that design is never neutral but is a reflection of the socio-political and environmental landscape it inhabits. Drawing on Guy Julier's concept of <strong>"Design Culture,"</strong> the paper explores how the global Modernist movement — specifically the raw, honest materiality of Brutalism — was adapted to suit the post-colonial aspirations of a growing Pakistani megacity.
+            This essay examines the intersection of <em>Brutalism</em> and the local culture of Karachi, arguing that design is never neutral but is a reflection of the socio-political and environmental landscape it inhabits. Drawing on Guy Julier's concept of <strong>"Design Culture,"</strong> the paper explores how the global Modernist movement specifically the raw, honest materiality of Brutalism was adapted to suit the post-colonial aspirations of a growing Pakistani megacity.
           </p>
         </div>
       </section>
@@ -219,10 +219,10 @@ const Index = () => {
                 Jarzombek's radical reframing challenges the teleological narrative that positions industrial modernity as the inevitable culmination of architectural history, instead revealing how colonialism, modernization, and globalization systematically erased vast, sophisticated architectural traditions that had flourished outside the empire and state framework.
               </p>
               <p>
-                By 1400 CE, empires and urban cultures covered merely a fraction of the globe, while the majority of humanity inhabited thriving First Societies and village communities whose architectural achievements — ranging from ancient megalithic structures to complex ritual landscapes — represented their own <em>"types of modernity,"</em> moments of innovation that broke from established norms without destroying the ecological and cultural continuities that sustained them.
+                By 1400 CE, empires and urban cultures covered merely a fraction of the globe, while the majority of humanity inhabited thriving First Societies and village communities whose architectural achievements ranging from ancient megalithic structures to complex ritual landscapes represented their own <em>"types of modernity,"</em> moments of innovation that broke from established norms without destroying the ecological and cultural continuities that sustained them.
               </p>
               <p className="border-l-2 border-accent pl-6 italic text-background/80">
-                In this light, modernism appears less as universal progress and more as a violent historical interruption — one that imposed Western industrial forms across the globe while actively suppressing the multiple alternative modernities embodied in pre-urban, pre-state architectures, narrowing humanity's built environment to a singular, homogenized expression of technological rationality.
+                In this light, modernism appears less as universal progress and more as a violent historical interruption one that imposed Western industrial forms across the globe while actively suppressing the multiple alternative modernities embodied in pre-urban, pre-state architectures, narrowing humanity's built environment to a singular, homogenized expression of technological rationality.
               </p>
             </div>
           </div>
@@ -236,7 +236,7 @@ const Index = () => {
           Timeline of Modernist<br />Design Movements
         </h2>
         <p className="text-sm uppercase tracking-widest text-muted-foreground mb-10 reveal">
-          Figure 1 — Graphical Timeline of Modernist Design Movements
+          Figure 1 Graphical Timeline of Modernist Design Movements
         </p>
         <Figure src={timeline} alt="Timeline of modernist design movements" caption="Fig. 1 / Impressionism → Brutalism · 1870s–1970s" />
       </section>
@@ -249,16 +249,16 @@ const Index = () => {
           <div className="mt-12 grid md:grid-cols-12 gap-12 items-start">
             <div className="md:col-span-7 space-y-6 text-base md:text-lg leading-relaxed reveal">
               <p>
-                Seyyed Hossein Nasr (<em>Knowledge and the Sacred</em>, 1989) provides a metaphysical framework for understanding Brutalism as the logical endpoint of modernism's <strong>"desacralization of knowledge."</strong> If modernism represents the divorce of knowledge from spiritual truth, Brutalism manifests this rupture in built form through its emphatic materialism — exposed <em>béton brut</em> (raw concrete) that refuses transcendence through ornament, symbolism, or sacred geometry.
+                Seyyed Hossein Nasr (<em>Knowledge and the Sacred</em>, 1989) provides a metaphysical framework for understanding Brutalism as the logical endpoint of modernism's <strong>"desacralization of knowledge."</strong> If modernism represents the divorce of knowledge from spiritual truth, Brutalism manifests this rupture in built form through its emphatic materialism exposed <em>béton brut</em> (raw concrete) that refuses transcendence through ornament, symbolism, or sacred geometry.
               </p>
               <p>
                 Brutalist buildings, with their "brutally honest" expression of structure and materials, embody what Nasr would identify as the modern world's reduction of reality to pure materiality, stripped of <em>scientia sacra</em> or sacred knowledge.
               </p>
               <p>
-                The style's rejection of decorative elements and its celebration of raw, unfinished surfaces represent architecture's complete submission to empirical, profane rationality — concrete without spiritual resonance, form without symbolic content.
+                The style's rejection of decorative elements and its celebration of raw, unfinished surfaces represent architecture's complete submission to empirical, profane rationality concrete without spiritual resonance, form without symbolic content.
               </p>
               <p className="text-sm uppercase tracking-widest text-muted-foreground pt-4 border-t border-foreground/30">
-                Reference — Fazio, Moffett &amp; Wodehouse · Jarzombek et al. · Cruickshank, <em>Sir Banister Fletcher's History of Architecture</em>
+                Reference Fazio, Moffett &amp; Wodehouse · Jarzombek et al. · Cruickshank, <em>Sir Banister Fletcher's History of Architecture</em>
               </p>
             </div>
             <div className="md:col-span-5">
@@ -280,13 +280,13 @@ const Index = () => {
               The term <strong>"Brutalism"</strong> derives from Le Corbusier's use of <em>béton brut</em> (raw concrete) at the Unité d'Habitation in Marseille (1952). However, the Smithsons (Alison and Peter) defined it as <em>"an ethic, not an aesthetic."</em>
             </p>
             <p>
-              This ethical dimension — emphasizing honesty of materials, clear exhibition of structure, and the valuation of materials <em>"as found"</em> — represents a philosophical deepening of modernist functionalism.
+              This ethical dimension emphasizing honesty of materials, clear exhibition of structure, and the valuation of materials <em>"as found"</em> represents a philosophical deepening of modernist functionalism.
             </p>
 
             <div className="border-2 border-foreground bg-card p-6 shadow-brutal">
-              <p className="font-display uppercase text-xs tracking-widest mb-4 text-accent">Reyner Banham — Three Tenets</p>
+              <p className="font-display uppercase text-xs tracking-widest mb-4 text-accent">Reyner Banham Three Tenets</p>
               <ul className="space-y-3">
-                {["Formal legibility of plan", "Clear exhibition of structure", "Valuation of materials for their inherent qualities — as found"].map((t, i) => (
+                {["Formal legibility of plan", "Clear exhibition of structure", "Valuation of materials for their inherent qualities as found"].map((t, i) => (
                   <li key={i} className="flex gap-4 items-baseline">
                     <span className="font-display text-accent">0{i + 1}</span>
                     <span>{t}</span>
@@ -296,7 +296,7 @@ const Index = () => {
             </div>
 
             <p>
-              Both modernism and Brutalism shared socialist/utopian aspirations. Brutalist buildings were often <em>"affordable housing projects that sought to reimagine architecture to address modern needs."</em> However, as Kostof's <em>A History of Architecture: Settings and Rituals</em> would remind us, the ritual and social dimensions of these spaces often failed to match their ideological ambitions — a disconnect between "settings and rituals" that led to Brutalism's eventual decline.
+              Both modernism and Brutalism shared socialist/utopian aspirations. Brutalist buildings were often <em>"affordable housing projects that sought to reimagine architecture to address modern needs."</em> However, as Kostof's <em>A History of Architecture: Settings and Rituals</em> would remind us, the ritual and social dimensions of these spaces often failed to match their ideological ambitions a disconnect between "settings and rituals" that led to Brutalism's eventual decline.
             </p>
           </div>
         </div>
@@ -318,7 +318,7 @@ const Index = () => {
             <div className="md:col-span-5 space-y-5 text-base md:text-lg leading-relaxed reveal">
               <h3 className="font-display text-3xl md:text-4xl uppercase">A Stratified Civic Cliff</h3>
               <p>
-                Lasdun's Royal National Theatre is perhaps the most articulate civic statement of British Brutalism. Its terraces stack like geological strata along the Thames, refusing the river's romanticism and instead asserting concrete as <em>public</em> material — a democratic monumentality.
+                Lasdun's Royal National Theatre is perhaps the most articulate civic statement of British Brutalism. Its terraces stack like geological strata along the Thames, refusing the river's romanticism and instead asserting concrete as <em>public</em> material a democratic monumentality.
               </p>
               <p>
                 Where the Unité d'Habitation declared housing as a <em>machine for living</em>, the National Theatre argues that culture, too, must wear the same honest skin: cast in shutter-board concrete, indifferent to ornament, available to everyone.
@@ -338,11 +338,11 @@ const Index = () => {
           <div className="md:col-span-7 reveal">
             <h2 className="font-display text-5xl md:text-7xl uppercase leading-none">Karachi</h2>
             <p className="mt-6 text-base md:text-lg leading-relaxed text-foreground/90">
-              Karachi reveals culture's role in design as simultaneously resistant, adaptive, and transformative. Modernism and Brutalism entered Karachi as instruments of colonial and post-colonial state power — tools for "desacralization," "irruption," and the erasure of alternative architectural traditions — yet Karachi's culture persistently reinscribed these forms with local meaning, hybridizing modernist concrete with Sindhi limestone, Brutalist monumentality with Sufi pilgrimage practices, and rational planning with the organic vitality of informal settlement.
+              Karachi reveals culture's role in design as simultaneously resistant, adaptive, and transformative. Modernism and Brutalism entered Karachi as instruments of colonial and post-colonial state power tools for "desacralization," "irruption," and the erasure of alternative architectural traditions yet Karachi's culture persistently reinscribed these forms with local meaning, hybridizing modernist concrete with Sindhi limestone, Brutalist monumentality with Sufi pilgrimage practices, and rational planning with the organic vitality of informal settlement.
             </p>
           </div>
           <div className="md:col-span-5 reveal">
-            <Figure src={karachi} alt="Karachi street life illustration" caption="Local fabric — informal settlement & street life" />
+            <Figure src={karachi} alt="Karachi street life illustration" caption="Local fabric informal settlement & street life" />
           </div>
         </div>
       </section>
@@ -353,7 +353,7 @@ const Index = () => {
           <SectionLabel n="07" label="Application" />
           <h2 className="font-display text-5xl md:text-7xl uppercase reveal">Brutalism<br />in Karachi</h2>
           <p className="mt-8 max-w-3xl text-base md:text-lg leading-relaxed reveal">
-            Brutalism — characterized by <em>béton brut</em>, massive forms, and a rejection of decorative facades — found a strange but fitting home in post-independence Karachi. As a young nation, Pakistan sought a language that represented progress, strength, and a clean break from British Colonial Neoclassicism.
+            Brutalism characterized by <em>béton brut</em>, massive forms, and a rejection of decorative facades found a strange but fitting home in post-independence Karachi. As a young nation, Pakistan sought a language that represented progress, strength, and a clean break from British Colonial Neoclassicism.
           </p>
 
           {/* Timeline */}
@@ -361,7 +361,7 @@ const Index = () => {
             <h3 className="font-display text-2xl uppercase mb-8">Timeline of the Movement</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {[
-                { year: "1950s — 1960s", title: "The Golden Age", body: "Karachi's expansion makes the city a laboratory for Modernist experiments, influenced by the Greek planner Constantinos Doxiadis." },
+                { year: "1950s 1960s", title: "The Golden Age", body: "Karachi's expansion makes the city a laboratory for Modernist experiments, influenced by the Greek planner Constantinos Doxiadis." },
                 { year: "1970s", title: "Peak Brutalism", body: "Architects like Yasmeen Lari and Pyarali Merali deploy concrete to address the massive housing and institutional needs of a rapidly growing population." },
               ].map((it, i) => (
                 <div key={i} className="border-2 border-foreground bg-card p-6 shadow-brutal hover:-translate-x-1 hover:-translate-y-1 hover:shadow-brutal-lg transition-transform">
@@ -381,14 +381,14 @@ const Index = () => {
         </div>
       </section>
 
-      {/* HABIB BANK PLAZA — CASE STUDY */}
+      {/* HABIB BANK PLAZA CASE STUDY */}
       <section id="habib" className="container py-20 md:py-28 scroll-mt-20">
         <SectionLabel n="08" label="Case Study" />
         <h2 className="font-display text-5xl md:text-7xl uppercase reveal leading-none">
           Habib Bank<br />Plaza · 1963
         </h2>
         <p className="mt-4 text-sm uppercase tracking-[0.3em] text-muted-foreground reveal">
-          Architect — Leo A. Daly · I.I. Chundrigar Road, Karachi
+          Architect Leo A. Daly · I.I. Chundrigar Road, Karachi
         </p>
 
         <div className="mt-12 grid md:grid-cols-12 gap-12 items-start">
@@ -403,9 +403,9 @@ const Index = () => {
               </p>
             </div>
             <div>
-              <p className="font-display uppercase text-xs tracking-widest text-accent mb-2">Architectural Style — South Asian Brutalism</p>
+              <p className="font-display uppercase text-xs tracking-widest text-accent mb-2">Architectural Style South Asian Brutalism</p>
               <p>
-                The building is a premier example of the <em>"International Style"</em> adapted into a Brutalist framework. It rejects the ornate, decorative styles of the past in favour of <strong>structural honesty</strong> — its form clearly expresses its function and internal skeletal structure — and <strong>monumentalism</strong>, its massive blocky presence on Karachi's "Wall Street" symbolising the city's financial strength and the "Machine Age" of the 1960s.
+                The building is a premier example of the <em>"International Style"</em> adapted into a Brutalist framework. It rejects the ornate, decorative styles of the past in favour of <strong>structural honesty</strong> its form clearly expresses its function and internal skeletal structure and <strong>monumentalism</strong>, its massive blocky presence on Karachi's "Wall Street" symbolising the city's financial strength and the "Machine Age" of the 1960s.
               </p>
             </div>
           </div>
@@ -417,9 +417,9 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { t: "Exposed Concrete & Local Aggregates", b: "The facade is defined by its raw, unpainted concrete finish (béton brut). By using local sand and stone in the concrete mix, the building subtly reflects the earthy tones of the Sindh region while maintaining an industrial edge." },
-              { t: "Geometric Facade — The 'Coin Stack'", b: "The building is often described as resembling a stack of coins, created by its rhythmic, repetitive horizontal and vertical concrete grids — a high-contrast play of light and shadow characteristic of Brutalist photography." },
-              { t: "Climatic Response — Deep-set Windows", b: "Unlike Western glass towers, the architect designed deep concrete recesses for the windows. These act as natural sun-breakers (brise-soleil), shielding the interior from Karachi's intense heat and reducing the solar load on the building." },
-              { t: "Cultural Symbolism", b: "Beyond architecture, the plaza is a symbol of Post-Colonial Identity — Pakistan's transition from a colonial economy to a modern, independent financial power. It has even integrated into local culture as a traditional site for the Ruet-e-Hilal Committee to gather for moon-sighting." },
+              { t: "Geometric Facade The 'Coin Stack'", b: "The building is often described as resembling a stack of coins, created by its rhythmic, repetitive horizontal and vertical concrete grids a high-contrast play of light and shadow characteristic of Brutalist photography." },
+              { t: "Climatic Response Deep-set Windows", b: "Unlike Western glass towers, the architect designed deep concrete recesses for the windows. These act as natural sun-breakers (brise-soleil), shielding the interior from Karachi's intense heat and reducing the solar load on the building." },
+              { t: "Cultural Symbolism", b: "Beyond architecture, the plaza is a symbol of Post-Colonial Identity Pakistan's transition from a colonial economy to a modern, independent financial power. It has even integrated into local culture as a traditional site for the Ruet-e-Hilal Committee to gather for moon-sighting." },
             ].map((f, i) => (
               <div key={i} className="border-2 border-foreground bg-card p-6 shadow-brutal hover:-translate-x-1 hover:-translate-y-1 hover:shadow-brutal-lg transition-transform">
                 <p className="font-display text-accent text-sm tracking-widest">0{i + 1}</p>
@@ -434,7 +434,7 @@ const Index = () => {
         <div className="mt-12 border-l-4 border-accent pl-6 max-w-3xl reveal">
           <p className="font-display uppercase text-xs tracking-widest text-accent mb-2">Critical Summary</p>
           <p className="text-base md:text-lg leading-relaxed italic text-foreground/90">
-            The Habib Bank Plaza is more than just an office — it is a monument to progress. It successfully blends the harsh, uncompromising lines of Brutalism with functional adaptations for a tropical climate, making it an essential case study for understanding the intersection of modern architecture and South Asian urban identity.
+            The Habib Bank Plaza is more than just an office it is a monument to progress. It successfully blends the harsh, uncompromising lines of Brutalism with functional adaptations for a tropical climate, making it an essential case study for understanding the intersection of modern architecture and South Asian urban identity.
           </p>
         </div>
 
@@ -459,13 +459,13 @@ const Index = () => {
           {/* Body */}
           <div className="max-w-4xl space-y-6 text-lg md:text-xl leading-relaxed text-background/90 reveal">
             <p>
-              This essay has examined how Brutalism, far from being a neutral architectural import, became a site of cultural negotiation in post-colonial Karachi. While modernist architecture arrived as an instrument of state power — embodying what Seyyed Hossein Nasr terms the <em>"desacralization of knowledge"</em> — Karachi's local culture persistently reinscribed these concrete forms with new meaning.
+              This essay has examined how Brutalism, far from being a neutral architectural import, became a site of cultural negotiation in post-colonial Karachi. While modernist architecture arrived as an instrument of state power embodying what Seyyed Hossein Nasr terms the <em>"desacralization of knowledge"</em> Karachi's local culture persistently reinscribed these concrete forms with new meaning.
             </p>
             <p>
               Through hybrid practices that merged modernist monumentality with Sufi pilgrimage traditions, and rational planning with organic settlement patterns, the city transformed Brutalism's "brutally honest" materialism into a distinctive post-colonial vernacular.
             </p>
             <p>
-              Ultimately, Karachi's Brutalist landscape reveals that architecture is never simply imposed or received, but actively reinterpreted. The city's concrete buildings stand not as monuments to universal modernism, but as emergent expressions of local identity — demonstrating how culture mediates between global forms and particular places, creating architectures that are neither purely modern nor traditionally authentic, but something dynamically new.
+              Ultimately, Karachi's Brutalist landscape reveals that architecture is never simply imposed or received, but actively reinterpreted. The city's concrete buildings stand not as monuments to universal modernism, but as emergent expressions of local identity demonstrating how culture mediates between global forms and particular places, creating architectures that are neither purely modern nor traditionally authentic, but something dynamically new.
             </p>
           </div>
         </div>
@@ -538,7 +538,7 @@ const Index = () => {
         <div className="container grid md:grid-cols-3 gap-10 text-sm">
           <div>
             <p className="font-display text-2xl uppercase">Colophon</p>
-            <p className="mt-3 text-background/70">Set in Archivo Black & Space Grotesk. Cast in raw concrete tones — paper, ochre, rust.</p>
+            <p className="mt-3 text-background/70">Set in Archivo Black & Space Grotesk. Cast in raw concrete tones paper, ochre, rust.</p>
           </div>
           <div>
             <p className="text-xs uppercase tracking-[0.3em] text-accent">Author</p>
